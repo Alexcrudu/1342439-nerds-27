@@ -8,8 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="#">
-            <img src="img/nerds-logo.png" width="160" height="65"
-          alt=" nerds-logo">
+         <img src="img/nerds-logo.png" width="160" height="65" alt=" nerds-logo">
         </a>
         <ul>
           <li><a href="info-html">Студия</a></li>
@@ -19,98 +18,104 @@
         </ul>
         <ul>
           <li>
-            <a href="Korb-html">Корзина</a>
+            <a href="korb-html">
+              <button>Корзина</button>
+            </a>
           </li>
         </ul>
       </nav>
       <h1>магазин готовых шаблонов</h1>
     </header>
     <main>
-      <h3>сетка:</h3>
-        <p><input type="radio" name="layout" value="adaptive" checked>адаптивная</p>
-        <p><input type="radio" name="layout" value="fixes">фиксированная</p>
-        <p><input type="radio" name="layout" value="elastic">резиновая</p>
-      <h3>особенности:</h3>
-        <p><input type="checkbox" name="specification" value="slaid" checked>слеидер</p>
-        <p><input type="checkbox" name="specification" value="bloc">блок преимуществ</p>
-        <p><input type="checkbox" name="specification" value="news" checked>новости</p>
-        <p><input type="checkbox"name="specification" value="galery">галерея</p>
-        <p><input type="checkbox" name="specification" value="box">корзина</p>
-        <p><input type="submit" value="ПОКАЗАТЬ"></p>
+      <form> 
+       <h3>сетка:</h3>
+         <input type="radio" name="layout" value="адаптивная" id="adaptive" checked>
+         <label for="adaptive">адаптивная</label>
+         <input type="radio" name="layout" value="фиксированная" id="fixed">
+         <label for="fixed">фиксированная</label>
+         <input type="radio" name="layout" value="резиновая" id="elastic">
+         <label for="elastic">резиновая</label>
+       <h3>особенности:</h3>
+         <input type="checkbox" name="specification" value="слеидер" id="slaid" checked>
+         <label for="slaid">слеидер</label>
+         <input type="checkbox" name="specification" value="блок преимуществ" id="block">
+         <label for="block">блок преимуществ</label>
+         <input type="checkbox" name="specification" value="новости" id="news"checked>
+         <label for="news">новости</label>
+         <input type="checkbox" name="specification" value="галерея" id="galery">
+         <label for="galery">галерея</label>
+         <input type="checkbox" name="specification" value="корзина" id="box">
+         <label for="box">корзина</label>
+         <input type="sub" value="показать"></p>
+      </form>
       <div>
-          <img src="img/img-sedona-jpg.png" width="360px" height="576px">
-            <div>
-                <h3 class="name">
-                  <a href="sedona-html">sedona</a>
-                </h3>
-                <p class="info">информационный сайт<br> 
-                    для туристов</p>
-                    <button>9900P</button>
-            </div>
-      </div>
-      <div>
-          <img src=img/img-pink-jpg.png width="360px" height="576px">
-          <div>
-            <h3 class="name">
-              <a href="pimk-app-html">pink app</a>
-            </h3>
-            <p class="info">продуктовый лендинг<br> 
-                приложения для ios и android</p>
-                <button>9900P</button>
-          </div>
-       </div>
-      <div>
-           <img src=img/img-barbershop-jpg.png width="360px" height="576px">
-           <div>
-            <h3 class="name">
-              <a href="barbershop-html">barbershop</a>
-            </h3>
-            <p class="info">сайт салона красоты.<br> 
-                для мужчин, да.</p>
-                <button>9900P</button>
+        <img src="img/img-sedona-jpg.png" width="360px" height="576px">
+        <div>
+          <h3 class="name">
+            <a href="sedona-html">sedona</a>
+          </h3>
+          <p class="info">информационный сайт для туристов</p>
+          <button>9900P</button>
         </div>
       </div>
       <div>
-            <img src=img/img-mishka-jpg.png width="360px" height="576px">
-            <div>
-              <h3 class="name">
-                <a href="mishka-html">mishka</a>
-              </h3>
-              <p class="info">интернет магазин<br> 
-                  вязаных игрушек</p>
-                  <button>9900P</button>
-          </div>
+        <img src=img/img-pink-jpg.png width="360px" height="576px">
+        <div>
+          <h3 class="name">
+            <a href="pimk-app-html">pink app</a>
+          </h3>
+          <p class="info">продуктовый лендинг приложения для ios и android</p>
+          <button>9900P</button>
+        </div>
       </div>
       <div>
-          <img src=img/img-aplus-jpg.png width="360px" height="576px">
-            <div>
-              <h3 class="name">
-                <a href="а-plus-html">а plus</a>
-              </h3>
-              <p class="info">Лендинг курсов повышения<br> 
-                квалификации</p>
-                  <button>9900P</button>
-            </div>
+        <img src=img/img-barbershop-jpg.png width="360px" height="576px">
+        <div>
+          <h3 class="name">
+            <a href="barbershop-html">barbershop</a>
+          </h3>
+          <p class="info">сайт салона красоты. для мужчин, да.</p>
+          <button>9900P</button>
+        </div>
       </div>
       <div>
-         <img src=img/img-kvast-jpg.png width="360px" height="576px">
-         <div>
+        <img src=img/img-mishka-jpg.png width="360px" height="576px">
+        <div>
+          <h3 class="name">
+            <a href="mishka-html">mishka</a>
+          </h3>
+          <p class="info">интернет магазин вязаных игрушек</p>
+          <button>9900P</button>
+        </div>
+      </div>
+      <div>
+        <img src=img/img-aplus-jpg.png width="360px" height="576px">
+        <div>
+          <h3 class="name">
+            <a href="а-plus-html">а plus</a>
+          </h3>
+          <p class="info">Лендинг курсов повышения квалификации</p>
+          <button>9900P</button>
+        </div>
+      </div>
+      <div>
+        <img src=img/img-kvast-jpg.png width="360px" height="576px">
+        <div>
           <h3 class="name">
             <a href="kvast-html">Кваст</a>
           </h3>
-          <p class="info">Промо-сайт производителя<br> 
-            крафтового кваса</p>
-              <button>9900P</button>
-      </div>
+          <p class="info">Промо-сайт производителя крафтового кваса</p>
+          <button>9900P</button>
+        </div>
       </div>
     </main>
     <footer>
-        <ul class="social-media">
-          <li><a href="vk">вконтакте</a></li>
-          <li><a href="facebook">facebook</a></li>
-          <li><a href="instagram">instagram</a></li>
-        </ul>
-        <h3>давайте дружить, это выгодно!</h3>
-        <p>скидка 10% для друзей из социальных сетей.</p>
+      <ul class="social-media">
+        <li><a href="vk">вконтакте</a></li>
+        <li><a href="facebook">facebook</a></li>
+        <li><a href="instagram">instagram</a></li>
+      </ul>
+      <h3>давайте дружить, это выгодно!</h3>
+      <p>скидка 10% для друзей из социальных сетей.</p>
     </footer>
   
