@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alexandra Crudu](https://up.htmlacademy.ru/htmlcss/27/user/1342439).
-* Наставник: [Виктория Коваленко-1](https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
