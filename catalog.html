@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>HTML Academy: нёрдс</title>
   </head>
   <body>
     <header class="main-header">
@@ -11,30 +11,36 @@
          <img src="img/nerds-logo.png" width="160" height="65" alt=" nerds-logo">
         </a>
         <ul>
-          <li><a href="info-html">Студия</a></li>
-          <li><a href="clients-html">Клиенты</a></li>
-          <li><a href="shop-html">Магазин</a></li>
-          <li><a href="contacts-html">Контакты</a></li>
+          <li><a href="info-html">студия</a></li>
+          <li><a href="clients-html">клиенты</a></li>
+          <li><a href="shop-html">магазин</a></li>
+          <li><a href="contacts-html">контакты</a></li>
         </ul>
         <ul>
           <li>
-            <a href="korb-html">
-              <button>Корзина</button>
-            </a>
+            <a href="korb-html">корзина</a>
           </li>
         </ul>
       </nav>
       <h1>магазин готовых шаблонов</h1>
     </header>
     <main>
-      <form> 
+      <form>
+       <div class="price">
+        <p class="price-title">стоимость</p>
+        <input type="range" multiple>
+          <input type="button" name="prev" value="от">
+          <input type="button" name="next" value="до">
+         </div>
+        </div>
+       </div>
        <h3>сетка:</h3>
-         <input type="radio" name="layout" value="адаптивная" id="adaptive" checked>
-         <label for="adaptive">адаптивная</label>
-         <input type="radio" name="layout" value="фиксированная" id="fixed">
-         <label for="fixed">фиксированная</label>
-         <input type="radio" name="layout" value="резиновая" id="elastic">
-         <label for="elastic">резиновая</label>
+       <input type="radio" name="layout" value="адаптивная" id="adaptive" checked>
+       <label for="adaptive">адаптивная</label>
+       <input type="radio" name="layout" value="фиксированная" id="fixed">
+       <label for="fixed">фиксированная</label>
+       <input type="radio" name="layout" value="резиновая" id="elastic">
+       <label for="elastic">резиновая</label>
        <h3>особенности:</h3>
          <input type="checkbox" name="specification" value="слеидер" id="slaid" checked>
          <label for="slaid">слеидер</label>
@@ -49,7 +55,7 @@
          <input type="sub" value="показать"></p>
       </form>
       <div>
-        <img src="img/img-sedona-jpg.png" width="360px" height="576px">
+        <img src="img/img-sedona-jpg.png" width="360" height="576">
         <div>
           <h3 class="name">
             <a href="sedona-html">sedona</a>
@@ -59,7 +65,7 @@
         </div>
       </div>
       <div>
-        <img src=img/img-pink-jpg.png width="360px" height="576px">
+        <img src=img/img-pink-jpg.png width="360" height="576">
         <div>
           <h3 class="name">
             <a href="pimk-app-html">pink app</a>
@@ -69,7 +75,7 @@
         </div>
       </div>
       <div>
-        <img src=img/img-barbershop-jpg.png width="360px" height="576px">
+        <img src=img/img-barbershop-jpg.png width="360" height="576">
         <div>
           <h3 class="name">
             <a href="barbershop-html">barbershop</a>
@@ -79,7 +85,7 @@
         </div>
       </div>
       <div>
-        <img src=img/img-mishka-jpg.png width="360px" height="576px">
+        <img src=img/img-mishka-jpg.png width="360" height="576">
         <div>
           <h3 class="name">
             <a href="mishka-html">mishka</a>
@@ -89,7 +95,7 @@
         </div>
       </div>
       <div>
-        <img src=img/img-aplus-jpg.png width="360px" height="576px">
+        <img src=img/img-aplus-jpg.png width="360" height="576">
         <div>
           <h3 class="name">
             <a href="а-plus-html">а plus</a>
@@ -99,7 +105,7 @@
         </div>
       </div>
       <div>
-        <img src=img/img-kvast-jpg.png width="360px" height="576px">
+        <img src=img/img-kvast-jpg.png width="360" height="576">
         <div>
           <h3 class="name">
             <a href="kvast-html">Кваст</a>
@@ -115,7 +121,8 @@
         <li><a href="facebook">facebook</a></li>
         <li><a href="instagram">instagram</a></li>
       </ul>
-      <h3>давайте дружить, это выгодно!</h3>
+      <h2>давайте дружить, это выгодно!</h2>
       <p>скидка 10% для друзей из социальных сетей.</p>
-    </footer>
-  
+     </footer>
+  </body>
+</html>
