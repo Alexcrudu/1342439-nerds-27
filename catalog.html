@@ -13,7 +13,7 @@
         <ul>
           <li><a href="info-html">студия</a></li>
           <li><a href="clients-html">клиенты</a></li>
-          <li><a href="shop-html">магазин</a></li>
+          <li><a href="#">магазин</a></li>
           <li><a href="contacts-html">контакты</a></li>
         </ul>
         <ul>
@@ -29,10 +29,8 @@
        <div class="price">
         <p class="price-title">стоимость</p>
         <input type="range" multiple>
-          <input type="button" name="prev" value="от">
-          <input type="button" name="next" value="до">
-         </div>
-        </div>
+        <input type="button" name="prev" value="от">
+        <input type="button" name="next" value="до">
        </div>
        <h3>сетка:</h3>
        <input type="radio" name="layout" value="адаптивная" id="adaptive" checked>
@@ -52,7 +50,7 @@
        <label for="galery">галерея</label>
        <input type="checkbox" name="specification" value="корзина" id="box">
        <label for="box">корзина</label>
-       <input type="sub" value="показать"></p>
+       <button type="submit">показать</button>
       </form>
       <div>
         <img src="img/img-sedona-jpg.png" width="360" height="576">
@@ -61,7 +59,7 @@
             <a href="sedona-html">sedona</a>
           </h3>
           <p class="info">информационный сайт для туристов</p>
-          <button>9900P</button>
+          <button type="button">9900P</button>
         </div>
       </div>
       <div>
@@ -71,7 +69,7 @@
             <a href="pimk-app-html">pink app</a>
           </h3>
           <p class="info">продуктовый лендинг приложения для ios и android</p>
-          <button>9900P</button>
+          <button type="button">9900P</button>
         </div>
       </div>
       <div>
@@ -81,7 +79,7 @@
             <a href="barbershop-html">barbershop</a>
           </h3>
           <p class="info">сайт салона красоты. для мужчин, да.</p>
-          <button>9900P</button>
+          <button type="button">9900P</button>
         </div>
       </div>
       <div>
@@ -91,7 +89,7 @@
             <a href="mishka-html">mishka</a>
           </h3>
           <p class="info">интернет магазин вязаных игрушек</p>
-          <button>9900P</button>
+          <button type="button">9900P</button>
         </div>
       </div>
       <div>
@@ -101,7 +99,7 @@
             <a href="а-plus-html">а plus</a>
           </h3>
           <p class="info">Лендинг курсов повышения квалификации</p>
-          <button>9900P</button>
+          <button type="button">9900P</button>
         </div>
       </div>
       <div>
@@ -111,33 +109,34 @@
             <a href="kvast-html">Кваст</a>
           </h3>
           <p class="info">Промо-сайт производителя крафтового кваса</p>
-          <button>9900P</button>
+          <button type="button">9900P</button>
         </div>
       </div>
+      <section>
+        <h3>nЁrds design studio</h3>
+        <p>191186, санкт-петербург, ул. б. конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+        <a href="#">напишите нам</a>
+      </section>
     </main>
     <footer>
       <ul class="social-media">
-        <li><a href="vk">вконтакте</a></li>
-        <li><a href="facebook">facebook</a></li>
-        <li><a href="instagram">instagram</a></li>
+        <li><a href="https://vk.com/">вконтакте</a></li>
+        <li><a href="https://www.facebook.com/">facebook</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
       </ul>
       <h2>давайте дружить, это выгодно!</h2>
       <p>скидка 10% для друзей из социальных сетей.</p>
-      <section>
-       <h3>nЁrds design studio</h3>
-       <p>191186, санкт-петербург, ул. б. конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-       <a href="#">напишите нам</a>
-      <section>
-     </footer>
+    </footer>
      <form>
       <p>Напишите нам</p>
-       <legend>ваше имя:</legend>
-       <input type="name" placeholder="Имя Фамилия">
-       <legend>ваш e-mail:</legend>
-       <input type="email" placeholder="email@example.com">
-       <legend>текст письма:</legend>
-       <input type="text" placeholder="В свободной форме">
-       <button type="submit">отправить</button>
+      <label for="user-name">ваше имя:</label>
+      <input  id="user-name" type="text" placeholder="Имя Фамилия">
+      <label for="user-e-mail">ваш e-mail:</label>
+      <input id="user-e-mail" type="email" placeholder="email@example.com">
+      <label for="user-text">текст письма:</label>
+      <input id="user-text" type="text" placeholder="В свободной форме">
+      <button type="submit">отправить</button>
+      <button type="button">закрыть</button>
      </form>
   </body>
 </html>
