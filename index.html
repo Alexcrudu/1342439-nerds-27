@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML аcademy: нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
@@ -10,42 +13,38 @@
         <a class="main-header-logo" href="#">
          <img src="img/nerds-logo.png" width="160" height="65" alt=" nerds-logo">
         </a>
-        <ul>
-          <li><a href="info-html">студия</a></li>
-          <li><a href="clients-html">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
-          <li><a href="contacts-html">контакты</a></li>
+        <ul class="navigation">
+          <li class="navigation-item"><a class="navigation-link" href="info-html">студия</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="clients-html">клиенты</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="catalog.html">магазин</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="contacts-html">контакты</a></li>
         </ul>
-        <ul>
-          <li>
-            <a href="#">корзина</a>
-          </li>
-        </ul>
+            <a class="header-basket" href="#">корзина</a>
       </nav>
       <h1>магазин готовых шаблонов</h1>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="catalog">
+        <div >
           <img src="img/advantage-picture-red.png" width="300" height="146">
-          <h3>веб-сайты</h3>\
+          <h3 class="catalog-name">веб-сайты</h3>
           <p>мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <a class="button-red" href="#">Заказать</a>
         </div>
         <div>
           <img src="img/advantage-picture-green.png" width="300" height="146">
-          <h3>приложения</h3>
+          <h3 class="catalog-name">приложения</h3>
           <p>покорите топ-10 приложений в appStore и google play</p>
-          <a href="#">Заказать</a>
+          <a class="button-green" href="#">Заказать</a>
         </div>
         <div>
           <img src="img/advantage-picture-yellow.png" width="300" height="146">
-          <h3>Веб-сайты</h3>
+          <h3 class="catalog-name">презентации</h3>
           <p>вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#">заказать</a>
+          <a class="button-yellow" href="#">заказать</a>
         </div>
       </section>
-      <section>
+      <section class="visit-card">
         <h3>nЁrds design studio</h3>
         <p>191186, санкт-петербург, ул. б. конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
         <a href="#">напишите нам</a>
@@ -57,8 +56,8 @@
         <li><a href="https://www.facebook.com/">facebook</a></li>
         <li><a href="https://www.instagram.com/">instagram</a></li>
       </ul>
-      <h2>давайте дружить, это выгодно!</h2>
-      <p>скидка 10% для друзей из социальных сетей.</p>
+      <h2 class="social-friends">давайте дружить, это выгодно!</h2>
+      <p class="sale">скидка 10% для друзей из социальных сетей.</p>
     </footer>
     <form>
      <p>Напишите нам</p>
@@ -68,7 +67,7 @@
       <input id="user-e-mail" type="email" placeholder="email@example.com">
       <label for="user-text">текст письма:</label>
       <input id="user-text" type="text" placeholder="В свободной форме">
-      <button type="submit">отправить</button>
+      <button class="write-us" type="submit">отправить</button>
       <button type="button">закрыть</button>
     </form>
   </body>
