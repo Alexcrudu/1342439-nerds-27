@@ -123,8 +123,38 @@ a{
     text-align: left;
 }
 
-.modal p{
+.modal-label {
+    color: black;
+    font-size: 16px;
+    font-family: Roboto-Bold;
+    line-height: 18px;
+    text-align: left; 
+}
+
+.modal-input {
+    width: 360px;
+     height: 50px;
+     border: solid 2px #d7dcde;
+}
+
+.modal .text {
+    width: 760px;
+    height: 118px;
+    border: solid 2px #d7dcde;
+}
+
+.modal-p {
     font-size: 45px;
     line-height: 45px;
     text-align: left;
+}
+
+.write-us {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    color: #ffffff;
+    line-height: 18px;
+    vertical-align: middle;
 }
