@@ -2,7 +2,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     line-height: 24px;
 }
 
@@ -33,6 +33,21 @@ a{
     font-size: 16px;
 }
 
+.navigation-link:hover,
+.header-basket:hover,
+.navigation-link:focus,
+.header-basket:focus {
+    color: #fb565a;
+}
+
+.navigation-link:active,
+.header-basket:active {
+   color: rgba(0, 0, 0, 0.3);
+}
+
+.active-link {
+    border-bottom: 2px solid #fb565a;
+}
 
 
 .catalog p {
@@ -43,7 +58,8 @@ a{
 }
 
 .catalog-name {
-    font-family: Roboto-Bold;
+    font-family: Roboto;
+    font-weight: bold;
     color: black;
     text-transform: uppercase;
     font-size: 24px;
@@ -52,6 +68,7 @@ a{
 
 .button-red {
     font-size: 16px;
+    padding: 19px 39px;
     text-align: center;
     text-transform: uppercase;
     background-color: #fb565a;
@@ -60,8 +77,18 @@ a{
     vertical-align: middle;
 }
 
+.button-red:hover{
+    background-color: #e74246;
+}
+
+.button-red:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}    
+
 .button-green {
     font-size: 16px;
+    padding: 19px 39px;
     text-align: center;
     text-transform: uppercase;
     background-color:#00ca74;
@@ -70,8 +97,18 @@ a{
     vertical-align: middle;
 }
 
+.button-green:hover {
+    background-color: #00bc6c;
+}
+
+.button-green:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #00aa62;
+}
+
 .button-yellow {
     font-size: 16px;
+    padding: 19px 39px;
     text-align: center;
     text-transform: uppercase;
     background-color:#efc84a;
@@ -80,8 +117,121 @@ a{
     vertical-align: middle;
 }
 
+.button-yellow:hover {
+    background-color: #eab534;
+}
+
+.button-yellow:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #e5a722;
+}
+
+.main-text {
+    font-size: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.price-title {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.catalog-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+
+.catalog-name label {
+    color: #283136;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.catalog p::first-letter {
+    text-transform: uppercase;
+}
+
+.catalog-type {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.catalog-type label {
+    color: #283136;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.button{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+}
+.name a {
+    color: black;
+    font-weight: bold;
+}
+.name {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.name a:hover,
+.name a:focus {
+    color: #fb565a;
+}
+
+.name a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.info {
+    color: #666666;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.price {
+    font-size: 16px;
+    padding: 19px 61px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    color: #ffffff;
+    line-height: 18px;
+    align-content: center;
+    vertical-align: middle;
+    border: none;
+}
+
+.price:hover,
+.price:focus {
+    background-color: #e74246;
+}
+
+.price:active {
+    background-color: #d7373b;
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+
 .visit-card h3 {
-    font-family: Roboto-Bold;
+    font-weight: bold;
     font-size: 18px; 
     text-align: left; 
     line-height: 30px;
@@ -105,13 +255,44 @@ a{
     vertical-align: middle;
 }
 
-.social-media {
+.social-media-item {
     list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+}
+
+.social-media-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.social-media img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media img:active{
+    opacity: 0.3;
+}
+
+.social-media-item:hover,
+ .social-media-item:focus{
+    background-color: #e74246;
+}
+
+.social-media-item:active {
+    background-color: #d7373b;
 }
 
 .social-friends {
     font-size: 36px;
-    font-family: Roboto-Bold;
+    font-weight: bold;
     line-height: 36px;
     text-align: left;
 }
@@ -126,7 +307,7 @@ a{
 .modal-label {
     color: black;
     font-size: 16px;
-    font-family: Roboto-Bold;
+    font-weight: bold;
     line-height: 18px;
     text-align: left; 
 }
@@ -143,7 +324,7 @@ a{
     border: solid 2px #d7dcde;
 }
 
-.modal-p {
+.modal p {
     font-size: 45px;
     line-height: 45px;
     text-align: left;

@@ -4,29 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Academy: нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
-    <link href="css/catalog.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <body>
-      <header class="main-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo" href="#">
+    <header class="main-header">
+       <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
            <img src="img/nerds-logo.png" width="160" height="65" alt=" nerds-logo">
           </a>
           <ul class="navigation">
             <li class="navigation-item"><a class="navigation-link" href="info-html">студия</a></li>
             <li class="navigation-item"><a class="navigation-link" href="clients-html">клиенты</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="catalog.html">магазин</a></li>
+            <li class="navigation-item"><a class="navigation-link active-link" href="catalog.html">магазин</a></li>
             <li class="navigation-item"><a class="navigation-link" href="contacts-html">контакты</a></li>
           </ul>
-              <a class="header-basket" href="#">корзина</a>
+          <a class="header-basket" href="#">корзина</a>
         </nav>
       <h1 class="main-text">магазин готовых шаблонов</h1>
     </header>
     <main>
       <form>
-       <div class="price">
+       <div class="price-filter">
         <p class="price-title">стоимость</p>
         <input type="range" multiple>
         <input type="button" name="prev" value="от">
@@ -68,7 +67,7 @@
           <h3 class="name">
             <a href="pimk-app-html">pink app</a>
           </h3>
-          <p class="info">продуктовый лендинг приложения для ios и android</p>
+          <p class="info">продуктовый лендинг приложения для IOS и Android</p>
           <button class="price" type="button">9900P</button>
         </div>
       </div>
@@ -98,7 +97,7 @@
           <h3 class="name">
             <a href="а-plus-html">а plus</a>
           </h3>
-          <p class="info">Лендинг курсов повышения квалификации</p>
+          <p class="info">лендинг курсов повышения квалификации</p>
           <button class="price" type="button">9900P</button>
         </div>
       </div>
@@ -106,23 +105,35 @@
         <img src=img/img-kvast-jpg.png width="360" height="576">
         <div>
           <h3 class="name">
-            <a href="kvast-html">Кваст</a>
+            <a href="kvast-html">кваст</a>
           </h3>
-          <p class="info">Промо-сайт производителя крафтового кваса</p>
+          <p class="info">промо-сайт производителя крафтового кваса</p>
           <button class="price" type="button">9900P</button>
         </div>
       </div>
       <section class="visit-card">
         <h3>nЁrds design studio</h3>
-        <p>191186, санкт-петербург, ул. б. конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
         <a href="#">напишите нам</a>
        </section>
     </main>
     <footer>
       <ul class="social-media">
-        <li><a href="https://vk.com/">вконтакте</a></li>
-        <li><a href="https://www.facebook.com/">facebook</a></li>
-        <li><a href="https://www.instagram.com/">instagram</a></li>
+        <li class="social-media-item vk">
+          <a href="https://vk.com/" class="social-media-link">
+            <img src="img/vk-icon.png" width="26px" height="15px" alt="Вконтакте" >
+          </a>
+        </li>
+        <li class="social-media-item facebook">
+          <a href="https://www.facebook.com/" class="social-media-link">
+           <img src="img/fb-icon.png" width="12px" height="22px" alt="Facebook">
+          </a>
+        </li>
+        <li class="social-media-item instagram">
+          <a href="https://www.instagram.com/" class="social-media-link">
+           <img src="img/insta-icon.png" width="21px" height="21px" alt="Instagram">
+          </a>
+        </li>
       </ul>
       <h2 class="social-friends">давайте дружить, это выгодно!</h2>
       <p class="sale">скидка 10% для друзей из социальных сетей.</p>
