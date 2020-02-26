@@ -2,7 +2,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 24px;
 }
 
@@ -10,20 +10,41 @@ a{
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 .main-header {
     width: 100%;
     background-color: #eee;
     padding: 50px 0;
+    margin-bottom: 80px;
 }
 
 .main-navigation {
     max-width: 1160px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
     list-style: none;
     padding: 0;
+    display: flex;
+}
+
+
+
+.navigation-item:not(:first-child) {
+    margin-left: 50px;
 }
 
 .navigation-link,
@@ -31,6 +52,7 @@ a{
     color: #000;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .navigation-link:hover,
@@ -50,20 +72,14 @@ a{
 }
 
 
+
 .catalog p {
     color:#283136;
     font-size: 16px; 
     text-align: left; 
     line-height: 24px;
-}
-
-.catalog-name {
-    font-family: Roboto, sans-serif ;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-    font-size: 24px;
-    text-align: left;
+    margin-bottom: 40px;
+    max-width: 238px;
 }
 
 .button-red {
@@ -75,6 +91,7 @@ a{
     color: #ffffff;
     line-height: 18px;
     vertical-align: middle;
+    margin-top: 40px;
 }
 
 .button-red:hover{
@@ -95,6 +112,7 @@ a{
     color: #ffffff;
     line-height: 18px;
     vertical-align: middle;
+    margin-top: 40px;
 }
 
 .button-green:hover {
@@ -115,6 +133,7 @@ a{
     color: #ffffff;
     line-height: 18px;
     vertical-align: middle;
+    margin-top: 40px;
 }
 
 .button-yellow:hover {
@@ -124,6 +143,15 @@ a{
 .button-yellow:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #e5a722;
+}
+
+
+.catalog{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+    }
 }
 
 .main-text {
@@ -141,12 +169,17 @@ a{
     text-transform: uppercase;
 }
 
+.catalog-item{
+    max-width: 300px;
+}
+
 .catalog-name {
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
     text-align: left;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    color: black;
 }
 
 .catalog-name label {
@@ -175,6 +208,29 @@ a{
     text-align: left;
 }
 
+.products {
+    display: flex;
+}
+
+.products-sidebar {
+    max-width: 140px;
+}
+
+.products-wrapper {
+    flex: 1 auto;
+    margin-left: 140px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.catalog-name{
+    display: block;
+}
+
 .button{
     text-align: center;
     text-transform: uppercase;
@@ -188,6 +244,15 @@ a{
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 35px;
+}
+.information{
+    width: 360px;
+    height: 231px;
+    background-color: #eeeeee;
+}
 }
 
 .name a:hover,
@@ -229,6 +294,14 @@ a{
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
+.visit-card{
+    display: block;
+    max-width: 318px;
+    max-height: 308px;
+    text-align: left;
+    margin-left: 50px;
+}
+
 
 .visit-card h3 {
     font-weight: bold;
@@ -247,13 +320,23 @@ a{
 
 .visit-card a {
     font-size: 16px;
+    padding: 19px 46px;
     text-align: center;
     text-transform: uppercase;
     background-color: #fb565a;
     color: #ffffff;
     line-height: 18px;
     vertical-align: middle;
+    width: 219px;
+    height: 50px;
 }
+
+
+.social-media-item:not(:first-child) {
+    margin-left: 12px;
+}
+
+
 
 .social-media-item {
     list-style: none;
@@ -261,6 +344,7 @@ a{
     height: 50px;
     border-radius: 50%;
     background-color: #e1e1e1;
+    margin-top: 69px;
 }
 
 .social-media-link {
@@ -290,18 +374,34 @@ a{
     background-color: #d7373b;
 }
 
+.footer-social-friends{
+    margin-left: 140px;
+}
+
+
 .social-friends {
     font-size: 36px;
     font-weight: bold;
-    line-height: 36px;
-    text-align: left;
+    line-height: 1;
 }
 
 .sale {
     color: #444444;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.375;
     text-align: left;
+    margin-top: 12px;
+}
+
+.footer-conteiner{
+    display: flex;
+    align-items: center;
+}
+
+
+.social-media{
+    display: flex;
+    margin-left: 140px;
 }
 
 .modal-label {
@@ -313,20 +413,19 @@ a{
 }
 
 .modal-input {
-    width: 360px;
-     height: 50px;
-     border: solid 2px #d7dcde;
+    max-width: 360px;
+    height: 50px;
+    border: solid 2px #d7dcde;
 }
 
 .modal .text {
-    width: 760px;
-    height: 118px;
+    max-width: 760px;
     border: solid 2px #d7dcde;
 }
 
 .modal p {
     font-size: 45px;
-    line-height: 45px;
+    line-height: 1;
     text-align: left;
 }
 
