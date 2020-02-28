@@ -80,14 +80,11 @@ img {
 
 .button {
     display: inline-block;
-    width: 160px;
-    height: 50px;
     font-size: 16px;
+    padding: 20px 40px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    line-height: 18px;
-    vertical-align: middle;
 }
 
 .button-red {
@@ -133,8 +130,6 @@ img {
 .catalog{
     display: flex;
     justify-content: space-between;
-    max-width: 1160px;
-    margin: 0 auto;
     }
 
 .main-text {
