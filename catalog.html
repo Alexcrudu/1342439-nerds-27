@@ -36,23 +36,39 @@
              <input type="button" name="next" value="до">
             </div>
             <h3 class="catalog-name">сетка:</h3>
-            <input type="radio" name="layout" value="адаптивная" id="adaptive" checked>
-            <label for="adaptive">адаптивная</label>
-            <input type="radio" name="layout" value="фиксированная" id="fixed">
-            <label for="fixed">фиксированная</label>
-            <input type="radio" name="layout" value="резиновая" id="elastic">
-            <label for="elastic">резиновая</label>
+            <div class="wrapper-catalog-name">
+              <input type="radio" name="layout" value="адаптивная" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </div>
+            <div class="wrapper-catalog-name">
+              <input type="radio" name="layout" value="фиксированная" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </div>
+            <div class="wrapper-catalog-name">
+              <input type="radio" name="layout" value="резиновая" id="elastic">
+              <label for="elastic">Резиновая</label>
+            </div>
             <h3 class="catalog-type">особенности:</h3>
-            <input type="checkbox" name="specification" value="слеидер" id="slaid" checked>
-            <label for="slaid">слеидер</label>
-            <input type="checkbox" name="specification" value="блок преимуществ" id="block">
-            <label for="block">блок преимуществ</label>
-            <input type="checkbox" name="specification" value="новости" id="news"checked>
-            <label for="news">новости</label>
-            <input type="checkbox" name="specification" value="галерея" id="galery">
-            <label for="galery">галерея</label>
-            <input type="checkbox" name="specification" value="корзина" id="box">
-            <label for="box">корзина</label>
+            <div class="wrapper-catalog-type">
+              <input type="checkbox" name="specification" value="слеидер" id="slaid" checked>
+              <label for="slaid">Слеидер</label>
+            </div>
+            <div class="wrapper-catalog-type">
+              <input type="checkbox" name="specification" value="блок преимуществ" id="block">
+              <label for="block">Блок преимуществ</label>
+            </div>
+            <div class="wrapper-catalog-type">
+              <input type="checkbox" name="specification" value="новости" id="news"checked>
+              <label for="news">Новости</label>
+            </div>
+            <div class="wrapper-catalog-type">
+              <input type="checkbox" name="specification" value="галерея" id="galery">
+              <label for="galery">Галерея</label>
+            </div>
+            <div class="wrapper-catalog-type">
+              <input type="checkbox" name="specification" value="корзина" id="box">
+              <label for="box">Корзина</label>
+            </div>
             <button class="button-catalog" type="submit">показать</button>
            </form>
         </aside>
@@ -155,15 +171,24 @@
       </div>
     </footer>
     <form class="modal">
-     <p>Напишите нам</p>
-      <label for="user-name">ваше имя:</label>
-      <input  id="user-name" type="text" placeholder="Имя Фамилия">
-      <label for="user-e-mail">ваш e-mail:</label>
-      <input id="user-e-mail" type="email" placeholder="email@example.com">
-      <label class="text" for="user-text">текст письма:</label>
-      <input id="user-text" type="text" placeholder="В свободной форме">
-      <button class="write-us" type="submit">отправить</button>
-      <button type="button">закрыть</button>
+      <div class="modal-box">
+        <p>Напишите нам</p>
+        <div class="modals-inputs-wrapper">
+          <div class="modals-input-wrapper">
+            <label for="user-name" class="modal-name" >ваше имя:</label>
+            <input  id="user-name" type="text" placeholder="Имя Фамилия" class="madal-name-box">
+          </div>
+
+          <div class="modals-input-wrapper">
+            <label for="user-e-mail" class="modal-e-mail">ваш e-mail:</label>
+            <input id="user-e-mail" type="email" placeholder="email@example.com" class="modal-e-mail-box">
+          </div>
+        </div>
+          <label class="text" for="user-text" class="modal-text">текст письма:</label>
+          <input id="user-text" type="text" placeholder="В свободной форме" class="modal-text-box">
+          <button class="write-us" type="submit">отправить</button>
+          <button class="modal-close" type="button" value="закрыть"></button>
+      </div>    
     </form>
   </body>
 </html>
