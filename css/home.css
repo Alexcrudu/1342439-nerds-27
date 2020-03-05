@@ -476,13 +476,23 @@ img {
     font-weight: bold;
     line-height: 18px;
     text-align: left; 
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
-.modal input {
+.modal input{
     width: 100%;
     height: 50px;
     border: solid 2px #d7dcde;
     margin-top: 12px;
+    padding-left: 15px ;
+}
+
+.modal textarea{
+    width: 100%;
+    min-height: 120px;
+    padding-left: 15px;
 }
 
 .modal p {
