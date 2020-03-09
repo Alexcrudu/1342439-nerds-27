@@ -27,8 +27,9 @@ img {
 .main-header {
     width: 100%;
     background-color: #eee;
-    padding: 50px 0;
-    margin-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .main-navigation {
@@ -43,10 +44,12 @@ img {
     list-style: none;
     padding: 0;
     display: flex;
+    margin-right: 85px;
+    margin-top: 30px;
 }
 
 .navigation-item:not(:first-child) {
-    margin-left: 50px;
+    margin-left: 47px;
 }
 
 .navigation-link,
@@ -55,6 +58,7 @@ img {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
+    margin-top: 7px;
 }
 
 .navigation-link:hover,
@@ -64,13 +68,19 @@ img {
     color: #fb565a;
 }
 
-.navigation-link:active,
-.header-basket:active {
-   color: rgba(0, 0, 0, 0.3);
+.navigation-link-active{
+   color: black;
+   border-bottom: 2px solid #fb565a;
+   padding-bottom: 10px;
 }
 
-.active-link {
-    border-bottom: 2px solid #fb565a;
+
+
+.main-text {
+    font-size: 55px;
+    text-align: center;
+    line-height: 55px;
+    margin: 70px;
 }
 
 .catalog p {
@@ -78,14 +88,15 @@ img {
     font-size: 16px; 
     text-align: left; 
     line-height: 24px;
-    margin-bottom: 40px;
-    max-width: 238px;
+    margin-bottom: 33px;
+    max-width: 245px;
 }
 
 .button {
     display: inline-block;
     font-size: 16px;
-    padding: 20px 40px;
+    padding: 14px 40px;
+    border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -133,14 +144,7 @@ img {
 
 .catalog{
     display: flex;
-    justify-content: space-between;
     }
-
-.main-text {
-    font-size: 55px;
-    text-align: center;
-    line-height: 55px;
-}
 
 .price-title {
     font-weight: bold;
@@ -151,24 +155,35 @@ img {
     text-transform: uppercase;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    opacity: 0;
+}
+
 .catalog-item{
     max-width: 300px;
 }
 
 .catalog-name {
+    display: block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 6px;
     text-align: left;
     text-transform: uppercase;
     color: black;
 }
 
-.catalog-name label {
-    color: #283136;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
+.catalog-item:not(:first-child){
+    margin-left: 100px;
 }
 
 .catalog p::first-letter {
@@ -179,24 +194,110 @@ img {
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
+    margin-top: 45px;
     text-align: left;
     text-transform: uppercase;
 }
 
-.catalog-type label {
+.wrapper-catalog-name,
+.wrapper-catalog-type{
+    display: block;
+    margin-top: 15px;
+    margin-left: 35px;
     color: #283136;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
+}
+
+.wrapper-catalog-name label{
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 3px;
+}
+
+.catalog-name-input+label::before{
+    content:"";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -32px;    
+    border: 4px solid #4d4d4d;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.catalog-name-input:hover+label::before,
+.catalog-name-input:focus+label::before{
+    opacity: 1;
+}
+
+.catalog-name-input:disabled+label::before{
+    opacity: 0.1;
+}
+
+.catalog-name-input:checked+label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    background-color: #4d4d4d;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.catalog-name-input:checked:hover+label::after,
+.catalog-name-input:checked:focus+label::after{
+    opacity: 1;
+}
+
+.catalog-name-input:checked:disabled+label::after{
+    opacity: 0.1;
+}
+
+.catalog-name-type+label{
+    position: relative;
+}
+
+.catalog-name-type+label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left:-32px;
+    background-image: url(../img/checkbox-off.png);
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.catalog-name-type:hover+label::before,
+.catalog-name-type:focus+label::before{
+    opacity: 1;
+}
+
+.catalog-name-type:disabled+label::before{
+    opacity: 0.1;
+}
+
+.catalog-name-type:checked+label::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/checkbox-on.png);
+}
+
+.button-catalog {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    border: none;
+    padding: 20px 90px;
+    margin-top: 45px;
+    max-width: 260px;
 }
 
 .products {
     display: flex;
-}
-
-
-.products-sidebar {
-    max-width: 140px;
 }
 
 .products-wrapper {
@@ -213,48 +314,139 @@ img {
 }
 
 .product:nth-of-type(even) {
-    margin-left: 20px;
+    margin-left: 37px;
 }
 
-.catalog-name{
-    display: block;
+.product{
+    margin-bottom: 33px;
+    position: relative;
 }
 
-.wrapper-catalog-name,
-.wrapper-catalog-type{
-    display: block;
-    margin-top: 15px;
-}
 
-.button-catalog {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #eeeeee;
-    border: none;
-    padding: 20px 90px;
-    margin-top: 45px;
+.products-sidebar {
     max-width: 260px;
+}
+
+.filter-item{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+}
+
+.filter-item legend{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.range-controls{
+    position: relative;
+    height: 41px;
+    margin-bottom: 17px;
+    padding: 39px 20px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    
+}
+.range-controls .scale{
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range-controls .bar{
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min{
+    left: 15px;
+}
+
+.range-controls .toggle-max{
+    left: 160px;
+}
+
+.price-controls{
+    font-size: 0;
+}
+
+.price-controls label{
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #283136;
+}
+
+.price-controls input{
+    width: 80px;
+    padding: 8px 10px;
+    margin-left: 15px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.max-price{
+    text-align: right;
 }
 
 .name a {
     color: black;
     font-weight: bold;
+    margin-top: 35px;
 }
 
 .name {
     text-align: center;
     font-size: 18px;
-    line-height: 30px;
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 35px;
+    margin: 0px;
 }
 
 .information{
-    width: 360px;
-    height: 231px;
-    background-color: #eeeeee;
-    margin-left: 0px;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   max-width: 360px;
+   height: 230px;
+   background-color: #eeeeee;
+   display: none;
+}
+
+.product:hover{
+    cursor: pointer;
+}
+
+.product:hover .information{
+    display: block;
 }
 
 .name a:hover,
@@ -267,6 +459,11 @@ img {
 }
 
 .info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 230px;
+    margin: 0 auto;
+    margin-top: 25px;
     color: #666666;
     font-size: 16px;
     line-height: 18px;
@@ -274,16 +471,19 @@ img {
 }
 
 .price {
+    display: block;
     font-size: 16px;
-    padding: 19px 61px;
+    width: 200px;
+    height: 50px;
     text-align: center;
     text-transform: uppercase;
     background-color: #fb565a;
     color: #ffffff;
-    line-height: 18px;
-    align-content: center;
-    vertical-align: middle;
     border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 43px;
 }
 
 .price:hover,
@@ -327,7 +527,7 @@ img {
 .button-popup {
     display: block;
     font-size: 16px;
-    padding: 20px 45px;
+    padding: 18px 45px;
     text-align: center;
     text-transform: uppercase;
     background-color: #fb565a;
@@ -348,8 +548,8 @@ img {
 
 .social-media-item {
     list-style: none;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: #e1e1e1;
 }
@@ -389,6 +589,7 @@ img {
     font-size: 36px;
     font-weight: bold;
     line-height: 1;
+    margin: 0cm;
 }
 
 .sale {
@@ -411,6 +612,7 @@ img {
     align-items: center;
 }
 .modal{
+    display: none;
     max-width: 960px;
     width: 100%;
     top: 50%;
