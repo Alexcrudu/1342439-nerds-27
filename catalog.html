@@ -5,7 +5,7 @@
     <title>HTML Academy: нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
@@ -39,8 +39,8 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">от<input name="min-price" type="number" value="0"></label>
-                <label class="max-price">до<input name="max-price" type="number" value="15000"></label>
+                <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
               </div>
             </fieldset>
             <h3 class="catalog-name">сетка:</h3>
@@ -58,8 +58,8 @@
             </div>
             <h3 class="catalog-type">особенности:</h3>
             <div class="wrapper-catalog-type">
-              <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="слеидер" id="slaid" checked>
-              <label for="slaid">Слайдер</label>
+              <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="слеидер" id="slider" checked>
+              <label for="slider">Слайдер</label>
             </div>
             <div class="wrapper-catalog-type">
               <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="блок преимуществ" id="block">
@@ -70,8 +70,8 @@
               <label for="news">Новости</label>
             </div>
             <div class="wrapper-catalog-type">
-              <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="галерея" id="galery">
-              <label for="galery">Галерея</label>
+              <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="галерея" id="gallery">
+              <label for="gallery">Галерея</label>
             </div>
             <div class="wrapper-catalog-type">
               <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="корзина" id="box">
@@ -84,6 +84,11 @@
           <div class="products-sort">sorting</div>
           <ul class="products-list">
             <li class="product">
+              <div class="deco">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <img src="img/img-sedona-jpg.png" width="360" height="576">
               <div class="information">
                 <h3 class="name">
@@ -94,16 +99,26 @@
               </div>
             </li>
             <li class="product">
+              <div class="deco">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <img src=img/img-pink-jpg.png width="360" height="576">
               <div class="information">
                 <h3 class="name">
-                  <a href="pimk-app-html">pink app</a>
+                  <a href="pink-app-html">pink app</a>
                 </h3>
                 <p class="info">Продуктовый лендинг приложения для IOS и Android</p>
                 <button class="price" type="button">9900P</button>
               </div>
             </li>
             <li class="product">
+              <div class="deco">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <img src=img/img-barbershop-jpg.png width="360" height="576">
               <div class="information">
                 <h3 class="name">
@@ -114,6 +129,11 @@
               </div>
             </li>
             <li class="product">
+              <div class="deco">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <img src=img/img-mishka-jpg.png width="360" height="576">
               <div class="information">
                 <h3 class="name">
@@ -124,6 +144,11 @@
               </div>
             </li>
             <li class="product">
+              <div class="deco">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <img src=img/img-aplus-jpg.png width="360" height="576">
               <div class="information">
                 <h3 class="name">
@@ -134,6 +159,11 @@
               </div>
             </li>
             <li class="product">
+              <div class="deco">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <img src=img/img-kvast-jpg.png width="360" height="576">
               <div class="information">
                 <h3 class="name">
@@ -180,22 +210,21 @@
         </div>
       </div>
     </footer>
-    <form class="modal">
+    <form class="modal" method="post" action="#">
       <div class="modal-box">
         <p>Напишите нам</p>
         <div class="modals-inputs-wrapper">
           <div class="modals-input-wrapper">
-            <label for="user-name" class="modal-name" >ваше имя:</label>
+            <label for="user-name" class="modal-name" >Ваше имя:</label>
             <input  id="user-name" type="text" placeholder="Имя Фамилия" class="madal-name-box">
           </div>
-
           <div class="modals-input-wrapper">
-            <label for="user-e-mail" class="modal-e-mail">ваш e-mail:</label>
+            <label for="user-e-mail" class="modal-e-mail">Ваш e-mail:</label>
             <input id="user-e-mail" type="email" placeholder="email@example.com" class="modal-e-mail-box">
           </div>
         </div>
-          <label class="text" for="user-text" class="modal-text">текст письма:</label>
-          <textarea id="user-text" type="text" placeholder="В свободной форме" class="modal-text-box"></textarea>
+          <label class="text modal-text" for="user-text">Текст письма:</label>
+          <textarea id="user-text"  placeholder="В свободной форме" class="modal-text-box"></textarea>
           <button class="write-us" type="submit">отправить</button>
           <button class="modal-close" type="button" value="закрыть"></button>
       </div>    

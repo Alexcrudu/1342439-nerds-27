@@ -5,14 +5,14 @@
     <title>HTML аcademy: нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
           <a class="main-header-logo" href="#">
-           <img src="img/nerds-logo.png" width="160" height="65" alt=" nerds-logo">
+           <img src="img/nerds-logo.png" width="160" height="65" alt="nerds-logo">
           </a>
           <ul class="navigation">
             <li class="navigation-item"><a class="navigation-link" href="info-html">студия</a></li>
@@ -30,21 +30,18 @@
         <ul class="slider-list">
           <li class="slide">
             <h2 class="slider-name">Долгоб дорогоб скрупулезно.</h2>
-            <p class="slider-discription">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <p class="slider-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="slider-button" href="#">Узнать больше</a>
-            <img src="#">
           </li>
           <li class="slide">
             <h2 class="slider-name">Любим математику как никто другой</h2>
-            <p class="slider-discription">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="slider-button" href="#">Узнать больше</a>
-            <img src="#">
           </li>
           <li class="slide">
             <h2 class="slider-name">Только ночь,только хардкор</h2>
-            <p class="slider-discription">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+            <p class="slider-description">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
             <a class="slider-button" href="#">Узнать больше</a>
-            <img src="#">
           </li>
         </ul>
       </section>
@@ -71,16 +68,16 @@
         </section>
       </div>
       <section class="visit-card">
-        <div class="visit-card-conteiner">
+        <div class="visit-card-container">
           <h3>nЁrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8</p>
-          <a  class="telefon-number" href="тел: +78122757575">тел. +7 (812) 275-75-75</a>
+          <a  class="phone-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </div>
         <a class="button-popup" href="#">напишите нам</a>
       </section>
     </main>
     <footer>
-      <div class=" footer container">
+      <div class="footer container">
         <ul class="social-media">
           <li class="social-media-item vk">
             <a href="https://vk.com/" class="social-media-link">
@@ -104,22 +101,21 @@
         </div>
       </div>
     </footer>
-    <form class="modal">
+    <form class="modal" method="post" action="#">
       <div class="modal-box">
         <p>Напишите нам</p>
         <div class="modals-inputs-wrapper">
           <div class="modals-input-wrapper">
-            <label for="user-name" class="modal-name" >ваше имя:</label>
+            <label for="user-name" class="modal-name" >Ваше имя:</label>
             <input  id="user-name" type="text" placeholder="Имя Фамилия" class="madal-name-box">
           </div>
-
           <div class="modals-input-wrapper">
-            <label for="user-e-mail" class="modal-e-mail">ваш e-mail:</label>
+            <label for="user-e-mail" class="modal-e-mail">Ваш e-mail:</label>
             <input id="user-e-mail" type="email" placeholder="email@example.com" class="modal-e-mail-box">
           </div>
         </div>
-          <label class="text" for="user-text" class="modal-text">текст письма:</label>
-          <input id="user-text" type="text" placeholder="В свободной форме" class="modal-text-box">
+          <label class="text modal-text" for="user-text">Текст письма:</label>
+          <textarea class="modal-text-box" id="user-text" placeholder="В свободной форме"></textarea>
           <button class="write-us" type="submit">отправить</button>
           <button class="modal-close" type="button" value="закрыть"></button>
       </div>    
