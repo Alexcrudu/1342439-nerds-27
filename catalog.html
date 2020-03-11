@@ -43,7 +43,8 @@
                 <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
               </div>
             </fieldset>
-            <h3 class="catalog-name">сетка:</h3>
+            <fieldset class="filter-item">
+            <h3 class="aside-catalog-name">сетка:</h3>
             <div class="wrapper-catalog-name">
               <input class="visually-hidden catalog-name-input" type="radio" name="layout" value="адаптивная" id="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
@@ -56,11 +57,15 @@
               <input class="visually-hidden catalog-name-input" type="radio" name="layout" value="резиновая" id="elastic">
               <label for="elastic">Резиновая</label>
             </div>
+          </fieldset>
+          <fieldset class="filter-item">
             <h3 class="catalog-type">особенности:</h3>
             <div class="wrapper-catalog-type">
               <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="слеидер" id="slider" checked>
               <label for="slider">Слайдер</label>
             </div>
+         
+
             <div class="wrapper-catalog-type">
               <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="блок преимуществ" id="block">
               <label for="block">Блок преимуществ</label>
@@ -77,6 +82,7 @@
               <input class="visually-hidden catalog-name-type" type="checkbox" name="specification" value="корзина" id="box">
               <label for="box">Корзина</label>
             </div>
+          </fieldset>
             <button class="button-catalog" type="submit">показать</button>
            </form>
         </aside>
@@ -84,11 +90,7 @@
           <div class="products-sort">sorting</div>
           <ul class="products-list">
             <li class="product">
-              <div class="deco">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              <div class="deco"></div>
               <img src="img/img-sedona-jpg.png" width="360" height="576">
               <div class="information">
                 <h3 class="name">
@@ -99,11 +101,7 @@
               </div>
             </li>
             <li class="product">
-              <div class="deco">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              <div class="deco"></div>
               <img src=img/img-pink-jpg.png width="360" height="576">
               <div class="information">
                 <h3 class="name">
