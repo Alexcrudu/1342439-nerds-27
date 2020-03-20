@@ -248,7 +248,7 @@ img {
     height: 16px;
     background-image: url(../img/active-button.png);
     background-repeat: no-repeat;
-    background-position: 5.5px 5.5px;
+    background-position: 5px 5.5px;
     z-index: 1;
 
 
@@ -1215,7 +1215,7 @@ img {
     position: relative;
     height: 416px;
     margin-top: 80px;
-    background-image: url(../img/2.png);
+    background-image: url(../img/map.png);
 }
 
 
