@@ -24,7 +24,8 @@ img {
 
 
 .container {
-    max-width: 1160px;
+    max-width: 1200px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -32,7 +33,7 @@ img {
 .main-header {
     width: 100%;
     background-color: #eee;
-    padding-top: 60px;
+    padding-top: 49px;
     padding-bottom: 42px;
     margin-bottom: 54px;
 }
@@ -41,8 +42,13 @@ img {
 .main-header-index {
     width: 100%;
     background-color: #eee;
-    padding-top: 60px;
+    padding-top: 48px;
     margin-bottom: 0;
+}
+
+
+.main-header-logo-index {
+    cursor: auto;
 }
 
 
@@ -59,7 +65,6 @@ img {
 
 .main-navigation {
     max-width: 1160px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,13 +75,22 @@ img {
     list-style: none;
     padding: 0;
     display: flex;
-    margin-right: 86px;
-    margin-top: 25px;
+    flex-wrap: wrap;
+    margin-right: 81px;
+    margin-top: 28px;
+    font-weight: 500;
+    max-width: 445px;
+    justify-content: space-between;
 }
 
 
 .navigation-item:not(:first-child) {
-    margin-left: 47px;
+    margin-left: 45px;
+}
+
+
+.navigation-item:nth-of-type(5n) {
+    margin-left: 0;
 }
 
 
@@ -87,6 +101,7 @@ img {
     text-transform: uppercase;
     font-size: 16px;
     margin-top: 8px;
+    font-weight: 500;
 }
 
 
@@ -118,7 +133,7 @@ img {
 .navigation-link-active {
    color: black;
    border-bottom: 1.5px solid #fb565a;
-   padding-bottom: 10px;
+   padding-bottom: 8px;
 }
 
 
@@ -130,7 +145,7 @@ img {
 
 
 .slide {
-    background-position: 93% 99% ;
+    background-position: 88% 99% ;
     background-repeat: no-repeat;
 }
 
@@ -219,12 +234,10 @@ img {
 
 .slide-control {
     position: absolute;
-    width: 88px;
     left: 50%;
     bottom: 90px;
-    transform: translateX(-52%);
+    transform: translateX(-51%);
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -238,6 +251,7 @@ img {
     border-radius: 50%;
     background-color: #ffffff;
     border: none;
+    margin-right: 15px;
 }
 
 
@@ -260,6 +274,7 @@ img {
     text-align: center;
     line-height: 55px;
     margin: 70px;
+    padding-right: 10px;
 }
 
 
@@ -553,7 +568,8 @@ img {
 
 .products-wrapper {
     flex: 1 auto;
-    margin-left: 138px;
+    margin-left: 140px;
+    width: 572px;
 }
 
 
@@ -574,7 +590,7 @@ img {
     list-style: none;
     margin-top: 4px;
     padding-left: 0px;
-    margin-left: 264px;
+    margin-left: 265px;
 }
 
 
@@ -627,7 +643,7 @@ img {
     display: flex;
     list-style: none;
     margin-top: 4px;
-    margin-left: 47px;
+    margin-left: 51px;
     padding-left: 0;
 }
 
@@ -639,6 +655,7 @@ img {
     border-right: 5px solid transparent;
     margin-top: 6px;
     cursor: pointer;
+    opacity: 0.3;
 }
 
 
@@ -657,18 +674,30 @@ img {
 }
 
 
+.triangle:hover,
+.triangle:focus {
+    opacity: 0.6;
+}
+
+
+.active-sorting {
+    opacity: 1;
+}
+
+
 .products-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: space-between;
+    max-width: 762px;
 }
 
 
 .products-sidebar {
     max-width: 263px;
-    width: 100%;
 }
 
 
@@ -689,7 +718,6 @@ img {
     font-size: 18px;
     line-height: 1.67;
     margin-bottom: 46px;
-    margin-left: 2px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.18px;
@@ -772,6 +800,7 @@ img {
 
 .max-price {
     text-align: right;
+    margin-left: -2px;
 }
 
 
@@ -805,6 +834,8 @@ img {
    max-width: 360px;
    background-color: #eeeeee;
    display: none;
+   max-height: 576px;
+   min-height: 231px;
 }
 
 
@@ -819,7 +850,7 @@ img {
 
 
 .product:nth-of-type(even) {
-    margin-left: 39px;
+    margin-left: 0;
 }
 
 
@@ -882,6 +913,9 @@ img {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+    max-height: 379px;
+    min-height: 37px;
+    overflow: auto;
 }
 
 
@@ -921,6 +955,7 @@ img {
     color: #ffffff;
     border: none;
     border-radius: 5px;
+    padding-top: 12px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 46px;
@@ -952,7 +987,7 @@ img {
 
 
 .page-number {
-    padding: 16px 21px;
+    padding: 15px 21px;
     background-color: #eeeeee;
     color: black;
     font-size: 16px;
@@ -1178,6 +1213,12 @@ img {
 }
 
 
+.image-wrapper:nth-of-child(5n)::before {
+    display: none;
+    margin-left: 30px;
+}
+
+
 .borodinski-picture {
     margin-left: 98px;
 }
@@ -1224,7 +1265,6 @@ img {
     max-height: 310px;
     text-align: left;
     position: absolute;
-    left: 141px;
     top: 53px;
     background-color: white;
 }
@@ -1278,9 +1318,29 @@ img {
 }
 
 
+.button-popup:focus,
+.button-popup:hover {
+    background-color: #e74246;
+}
+
+
+.button-popup:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
+
 .phone-number {
     color: #666666;
     margin-left: 2px;
+}
+
+
+.social-media {
+    display: flex;
+    padding-inline-start: 0;
+    align-items: center;
+    margin-top: 68px;
 }
 
 
@@ -1314,14 +1374,19 @@ img {
 }
 
 
-.social-media-item:hover,
-.social-media-item:focus {
+.social-media-link:hover,
+.social-media-link:focus {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     background-color: #e74246;
-    transition-duration: 1s;
 }
 
 
-.social-media-item:active {
+.social-media-link:active {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     background-color: #d7373b;
 }
 
@@ -1358,14 +1423,7 @@ img {
 .footer {
     display: flex;
     align-items: center;
-}
-
-
-.social-media {
-    display: flex;
-    padding-inline-start: 0;
-    align-items: center;
-    margin-top: 68px;
+    margin-bottom: 55px;
 }
 
 
@@ -1510,6 +1568,18 @@ img {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.write-us:focus,
+.write-us:hover {
+    background-color: #e74246;
+}
+
+
+.write-us:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
 }
 
 
