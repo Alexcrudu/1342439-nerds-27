@@ -76,16 +76,16 @@ img {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 81px;
+    margin-right: 60px;
     margin-top: 28px;
     font-weight: 500;
-    max-width: 445px;
-    justify-content: space-between;
+    width: 510px;
 }
 
 
-.navigation-item:not(:first-child) {
-    margin-left: 45px;
+.navigation-item {
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
 
@@ -236,7 +236,7 @@ img {
     position: absolute;
     left: 50%;
     bottom: 90px;
-    transform: translateX(-51%);
+    transform: translateX(-50%);
     display: flex;
     margin: 0;
     padding: 0;
@@ -480,7 +480,6 @@ img {
 .catalog-name-input:hover+label::before,
 .catalog-name-input:focus+label::before {
     opacity: 1;
-    transition-duration: 1s;
 }
 
 
@@ -590,7 +589,7 @@ img {
     list-style: none;
     margin-top: 4px;
     padding-left: 0px;
-    margin-left: 265px;
+    margin-left: 266px;
 }
 
 
@@ -836,6 +835,7 @@ img {
    display: none;
    max-height: 576px;
    min-height: 231px;
+   
 }
 
 
@@ -879,7 +879,7 @@ img {
 
 
 .product:hover .information,
-.product:focus .information {
+.product:focus-within .information {
     display: block;
 }
 
@@ -1183,12 +1183,6 @@ img {
 }
 
 
-.image-wrapper:first-of-type {
-    margin-left: 30px;
-    margin-top: 5px;
-}
-
-
 .image-wrapper:last-of-type {
     margin-left: 122px;
 }
@@ -1198,6 +1192,7 @@ img {
     position: relative;
     margin-left: 100px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -1213,12 +1208,6 @@ img {
 }
 
 
-.image-wrapper:nth-of-child(5n)::before {
-    display: none;
-    margin-left: 30px;
-}
-
-
 .borodinski-picture {
     margin-left: 98px;
 }
@@ -1231,6 +1220,23 @@ img {
 
 .mishka-picture::before {
     margin-left: -13px;
+}
+
+
+.image-wrapper:nth-of-type(4n+1)::before {
+    display: none;
+}
+
+
+.image-wrapper:nth-of-type(4n+1) {
+    margin-left: 70px;
+    align-items: center;
+}
+
+
+.image-wrapper:first-of-type {
+    margin-left: 30px;
+    margin-top: 5px;
 }
 
 
